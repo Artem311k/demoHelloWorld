@@ -1,0 +1,20 @@
+version: "1"
+
+volumes:
+  web:
+
+services:
+  demoHelloWorld:
+    build: demoHelloWorld\
+    restart: always
+    environment:
+      TZ: Europe/Moscow
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_URL: jdbc:postgresql://45.8.157.102:5432/postgres
+      PATH_TO_FILE: /usr/src/app/files/file.txt
+      APP_PORT: 8080
+    ports:
+      - 9090:8080
+    volumes:
+      - web:/usr/src/app/files
