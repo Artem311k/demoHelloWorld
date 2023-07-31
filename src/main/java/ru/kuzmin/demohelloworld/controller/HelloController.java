@@ -20,7 +20,6 @@ public class HelloController {
 
     @Value("${app.pathToFile}")
     private String pathToFile;
-
     private int counter;
 
     @GetMapping
