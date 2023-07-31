@@ -5,7 +5,7 @@ volumes:
 
 services:
   demo_hello_world:
-    build: .\
+    build: .
     restart: always
     environment:
       TZ: Europe/Moscow
