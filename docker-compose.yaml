@@ -4,8 +4,8 @@ volumes:
   web:
 
 services:
-  demoHelloWorld:
-    build: demoHelloWorld\
+  demo_hello_world:
+    build: .\
     restart: always
     environment:
       TZ: Europe/Moscow
